@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 3</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,600i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    
+    <header id="header">
+        <h1>Date Night Outfit Generator</h1>
+        <button><a href="#question1">Get Started</a></button>
+            
+    </header>
+    <main>
+        <form>
+            <fieldset class="question question1" id="question1">
+                <div class="wrapper">
+                    <h2>Which section of a clothing store do you prefer to shop in?</h2>
+
+                    <div class="option">
+                        <input type="radio" name="clothingSection" id="men" value="men">
+                        <label for="men">Men</label>
+                        
+                    </div>
+                    
+                    <div class="option">
+                        <input type="radio" name="clothingSection" id="women" value="women">
+                        <label for="women">Women</label>
+                        
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" name="clothingSection" id="either" value="either">
+                        <label for="either">Either</label>
+                    </div>
+
+                    <button>
+                        <a href="#question2">Next</a>
+                    </button>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset class="question question2" id="question2">
+                <div class="wrapper">
+                    <h2>What type of climate do you live in?</h2>
+
+                    <div class="option">
+                        <input type="radio" name="weather" id="cold" value="cold">
+                        <label for="cold">Cold</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="weather" id="hot" value="hot">
+                        <label for="hot">Warm</label>
+                    </div>
+                    <button>
+                        <a href="#question3">Next</a>
+                    </button>
+                </div>
+                
+            </fieldset>
+
+            <fieldset class="question question3" id="question3">
+                <div class="wrapper">
+                    <h2>What type of date are you going on?</h2>
+
+                    <div class="option">
+                        <input type="radio" name="dateType" id="fancy" value="fancy">
+                        <label for="fancy">Fancy shmancy (e.g. 5 star restaurant)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="dateType" id="casual" value="casual">
+                        <label for="casual">Pretty casual (e.g. going for coffee/drinks)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="dateType" id="veryCasual" value="veryCasual">
+                        <label for="veryCasual">Super casual (e.g. Netflix & chill)</label>
+                    </div>
+                    <button>
+                        <a href="#outfits">Done</a>
+                    </button>
+                    
+                </div>
+
+            </fieldset>
+            <section class="outfits" id="outfits">
+                <input class="submitButton" type="submit" value="Show me an outfit">
+                <div class="closet" id="closet">
+                
+                    <div class="tops"></div>
+                    <div class="bottoms"></div>
+                
+                </div>
+                <button class="startOver">
+                    <a href="#header">Start Over</a>
+                </button>
+            </section>
+        </form>
+    </main>
+
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+    <!-- smooth scroll: -->
+    <script src="scripts/jquery.smooth-scroll.js"></script>
+    
+    <!-- flickity: -->
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <script src="scripts/objects.js"></script>
+    <script src="scripts/script.js"></script>
+
+
+</body>
+</html>

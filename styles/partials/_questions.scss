@@ -1,0 +1,91 @@
+// QUESTIONS STYLES
+.question {
+
+
+    h2, label {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color: $primaryColour; 
+        width: 80%;
+        display: block;
+    }
+    h2 {
+        margin: 10% auto; 
+        text-shadow: 1px 1px 1px black;
+        font-size: 4rem;
+    }
+
+
+    input[type=radio] {
+        margin: 5px;
+        display: none; 
+    }
+
+    input[type=radio] + label {
+        margin: 0 auto;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 10px;
+        color: black;
+    }
+
+
+     input[type=radio]:hover + label, input[type=radio]:checked + label  {
+            background: $primaryColour;
+            color: white;
+        }
+
+    .option {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+    button {
+        margin: 5% auto;
+    }
+
+    // media queries:
+
+    @media (max-width:840px) {
+        background-attachment: scroll;
+         h2 {
+            font-size: 3.4rem;
+            margin-top: 20%;
+        }
+        input[type=radio] + label {
+            font-size: 2.6rem;
+        }
+        button {
+            margin: 8% auto;
+        }
+    }
+
+    @media (max-width:600px) {
+        h2 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+        }
+        label {
+            font-size: 2.4rem;
+        }
+        button {
+            margin: 10% auto;
+        }
+    }
+
+    @media (max-width:480px) {
+        h2 {
+            font-size: 3rem;
+        }
+        label {
+            font-size: 2rem;
+        }
+        button {
+            margin: 15% auto;
+        }
+    }
+}
+
+.question2 input[type=radio] + label {
+        color: $primaryColour;
+    }

@@ -1,0 +1,83 @@
+// GLOBAL STYLES
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+$primaryColour: rgb(22, 177, 159);
+
+header, .question, .outfits {
+    background:radial-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 100vh;
+}
+
+fieldset {
+    border: none;
+}
+
+.question1, .question3 {
+    background:radial-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width:75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+button, input[type=submit] {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background: $primaryColour;
+    border: 2px solid $primaryColour;
+    transition: all 0.2s ease;
+    
+    &:hover {
+        background: black;
+        color: $primaryColour;
+
+        }
+}
+
+a, input[type=submit] {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem; 
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    }
+
+@media (max-width: 840px) {
+        .wrapper {
+            width: 80%;
+        }
+    }
+@media (max-width: 40px) {
+        .wrapper {
+            width: 90%;
+        }
+    }
+
+
+
